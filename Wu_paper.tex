@@ -30,7 +30,7 @@
 \SetHeaderName{Physics Yesterday}
 
 %% and also...
-\SetPaperLocation{On some KCL server running KEATS}
+\SetPaperLocation{New York}
 \SetPaperSlogan{``Yesterday's physics, delivered today``}
 \SetPaperPrice{}
 
@@ -75,18 +75,24 @@
 
 \byline{The Asymmetric Life of Dr. Wu}{Alice Pleasance Liddell}
 
+\begin{Figure}
+ \centering
+ \includegraphics[width=0.9\linewidth]{{./images/wu-columbia}.png}
+ \captionof{figure}{\textit{\footnotesize Chien-Shiung Wu in 1963 at Columbia University}}
+\end{Figure}
+
 \textit{Chien-Shiung Wu, hailed as the first lady of physics, retired last year with numerous accolades to her name. She made extraordinary contributions to her field, such as proving that parity is not conserved. She was the American Physical Society’s first female president \textbf{[election newspaper article]} and won the inaugural Wolf Prize. \textbf{[Woolf Prize article]} Today we interview her to hear her reflections on her life and research.}
 
 \vspace{10pt}
 
-\begin{window}[10,r,\includegraphics[width=1.5in]{{"./images/wu-columbia"}.png},
-\textit{\footnotesize Chien-Shiung Wu in 1963 at Columbia University}
-]
+%\begin{window}[10,r,\includegraphics[width=2in]{{"./images/wu-columbia"}.png},
+%\textit{\footnotesize Chien-Shiung Wu in 1963 at Columbia University}
+%]
 \textbf{Welcome, Chien-Shiung Wu, it’s a privilege to have you here today. You’ve been retired for a year now, but throughout your life you’ve made some remarkable discoveries and become a role model for women all over the world. What motivated you to pursue physics? Did you have role models of your own at an early age? }
 \vspace{5pt}
 
 Thank you. When I was a student, I came across a biography of Madame Curie, the great chemist and physicist who became the first woman to win a Nobel Prize \cite{L1}. Curie’s intellectual curiosity and perseverance in a field dominated by men was particularly inspiring to me as a girl, and it ignited a lifelong passion. As a teenager I spent all my free time teaching myself physics from textbooks borrowed from friends and would often study late at night. I fell in love with physics. Neither friends, nor family, could pull me away from my work – I have always felt that in physics, and probably in other endeavors too, you must have total commitment. It is not just a job; it is a way of life \cite{L2}. I knew, however, that I would face many challenges, not only as a woman but as a Chinese American. My father encouraged me and gave me the confidence to succeed. He founded my elementary school, which was one of the first to admit girls. It was still very uncommon for girls to attend school then, but he strongly believed that girls should receive an education. I remember him always telling me to ignore the obstacles and keep walking forward – so I did\cite{L3} .
-\end{window}
+%\end{window}
 
 \q{Indeed, you’ve earned the nickname “the Chinese Madame Curie"\cite{L1}. What a prestigious title! That must be something, given you were so inspired by her.}
 
@@ -180,27 +186,41 @@ Yes, exactly! If we were to look at the neutron from the direction of outgoing e
  \captionof{figure}{\textit{\footnotesize When we look at the decay in a mirror, we see that any anisotropy in the emission of electrons (green) will flip with respect to the spin direction!}}
 \end{Figure}
 
+%\begin{window}[2,r,\includegraphics[width=2in]{{"./images/wu-setup"}.png},
+%\textit{\footnotesize Diagram of the setup \cite{C3} \vspace{5pt}}
+%]
 \q{Surely it wasn’t that simple in practice. What was the experiment like?}
-\begin{window}[2,r,\includegraphics[width=2in]{{"./images/wu-setup"}.png},
-\textit{\footnotesize Diagram of the setup \cite{C3} \vspace{5pt}}
-]
+
 We wanted to investigate the parity conservation of beta decay, so the first thing we needed a beta decay source. We used Cobalt-60, which decays as $^{60}_{27}\text{Co} \rightarrow ^{60}_{27}\text{Ni} + e^{-} + \nu _{e}$ \cite{C1}.
 We then aligned the spins of the nucleons Cobalt-60 using strong magnetic fields, while keeping everything as cold as we could: barely above 1K \cite{C2}! All of this took place inside a specific apparatus, with two pairs of detectors at right angles to measure both the gamma rays and the electrons.
 
+\begin{Figure}
+ \centering
+ \includegraphics[width=0.75\linewidth]{{"./images/wu-setup"}.png}
+ \captionof{figure}{\textit{\footnotesize  Diagram of the setup \cite{C3}}}
+\end{Figure}
+\vspace{10pt}
 \q{Why the cold temperatures?}
 
 Cobalt atoms vibrate, and this can disturb the alignment during the polarisation step. To avoid this, we freeze the atoms by exposing them to an extremely cold environment!
 Using the detectors, we were then able to measure the emission of both electrons and gamma rays in two perpendicular directions and, as the setup heated up, could compare the values as the neutron alignment got broken.
-\end{window}
-\begin{window}[1,r,\includegraphics[width=2in]{{"./images/wu-results"}.png},
-\textit{\footnotesize Experimental data from Wu’s experiment – the anisotropy in emission of electrons (bottom) perfectly matches that in the emission of gamma rays (top) \cite{C3} \vspace{5pt}}]
+%\end{window}
+
+\begin{Figure}
+ \centering
+ \includegraphics[width=\linewidth]{{"./images/wu-results"}.png}
+ \captionof{figure}{\textit{\footnotesize  Experimental data from Wu’s experiment – the anisotropy in emission of electrons (bottom) perfectly matches that in the emission of gamma rays (top) \cite{C3}}}
+\end{Figure}
+
+%\begin{window}[1,r,\includegraphics[width=2in]{{"./images/wu-results"}.png},
+%\textit{\footnotesize Experimental data from Wu’s experiment – the anisotropy in emission of electrons (bottom) %perfectly matches that in the emission of gamma rays (top) \cite{C3} \vspace{5pt}}]
 \q{I get measuring electrons, but why gamma rays? They’re not directly produced by the weak force.}
 
 You can think of this as a calibration test. We know that gamma rays couple with spin, so we’d expect to see some level of anisotropy \cite{J3}.
 
 This means we now have a way to directly measure how well aligned the nucleons are, and correlate any anisotropy in the electron emissions directly to the weak process, eliminating the chance of external effects influencing our data.
 The gamma ray anisotropy that we measured was approximately 0.6 meaning that 60\% of the rays were emitted in one direction, and the remaining 40\% In the other. More importantly, we also measured an anisotropy in the electron emission, which matched the exact plot of the gamma anisotropy \cite{C3}!
-\end{window}
+%\end{window}
 
 \q{There’s still one question I have – we don’t see electromagnetism breaking parity, so why does the weak force act different?}
 
